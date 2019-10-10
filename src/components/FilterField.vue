@@ -2,21 +2,21 @@
   <div class="filter">
     <h3>Фильтры товаров</h3>
     <Brands/>
-    <Slider/>
-    <Reset />
+    <PriceSlider/>
+    <ResetButton />
   </div>
 </template>
 
 <script>
-import Brands from './filters/Brands'
-import Slider from './filters/Slider'
-import Reset from './filters/Reset'
+import Brands from './Filters/Brands'
+import PriceSlider from './Filters/PriceSlider'
+import ResetButton from './Filters/ResetButton'
 
 export default {
   components: {
     Brands,
-    Slider,
-    Reset
+    PriceSlider,
+    ResetButton
   },
   mounted() {
     this.$store.dispatch('loadData')
